@@ -1,0 +1,11 @@
+name: Test
+version: 1.1
+main: me.iTreon.test.main.Main
+
+commands:
+   heal:
+      description: Heilt!
+   Items:
+      description: oeffnetaaaaaaaaaa
+   Gm:
+      description: sss
