@@ -8,7 +8,7 @@ public class JumpandRun implements Listener {
 	
 	@EventHandler
 	public void on(PlayerMoveEvent e) {
-		
+		System.out.println("Hi");
 	}
 
 }
