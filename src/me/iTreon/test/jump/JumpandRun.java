@@ -21,6 +21,8 @@ public class JumpandRun implements Listener {
 				p.setVelocity(v);
 				
 				p.playSound(p.getLocation(), Sound.ENTITY_ENDERDRAGON_DEATH, 1F, 1F);
+				
+				p.setFallDistance(-999F);
 			}
 		}
 		
