@@ -7,6 +7,8 @@ import org.bukkit.event.player.PlayerMoveEvent;
 public class JumpandRun implements Listener {
 	
 	@EventHandler
-	public void on(PlayerMoveEvent e)
+	public void on(PlayerMoveEvent e) {
+		
+	}
 
 }
