@@ -15,6 +15,7 @@ public class Main extends JavaPlugin {
 		getCommand("heal").setExecutor(new HealCommand());
 		getCommand("items").setExecutor(new IItemscomm());
 		getCommand("gm").setExecutor(new GameCommand());
+		getCommand("rules").setExecutor(new RulesCommand());
 		new JumpandRun(this);
 		new Event(this);
 	}
