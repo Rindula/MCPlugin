@@ -26,16 +26,17 @@ public class IItemscomm implements CommandExecutor{
 			if (p.hasPermission("test.items")) {
 				if(args.length == 0) {
 					
-					Inventory inv = Bukkit.createInventory(p, 9 * 4,"Rucksack" );
+					Inventory inv = Bukkit.createInventory(p, 9 * 4,"Mülleimer" );
 					p.openInventory(inv);
 					m.sendMessage(p, "Du hast das Inventory geöffnet");
-					
+					return true;
 					
 				} else 
 					m.sendMessage(p, "Dieser Command Funktoniert nicht!");
-		
+				return false;
 		}else 
 			m.sendMessage(p, "Dazu hast du keine rechte");
+			return true;
 		}
 		
 		return false;

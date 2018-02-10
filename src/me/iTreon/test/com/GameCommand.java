@@ -5,7 +5,6 @@ import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -38,6 +37,7 @@ public class GameCommand implements CommandExecutor {
 		if(p.getGameMode() == GameMode.SURVIVAL);
 			p.setGameMode(GameMode.CREATIVE);
 			m.sendMessage(p, "§aDu bist in Creative Modus");
+			System.err.println(p.getName() + " ist jetzt im Creative Modus");
 		return true;
 			}
 			

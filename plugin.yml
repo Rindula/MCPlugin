@@ -4,10 +4,14 @@ main: me.iTreon.test.main.Main
 
 commands:
    heal:
-      description: Heilt!
+      description: Heilt dich oder einen Spieler
+      usage: /heal [Spieler]
    Items:
-      description: oeffnetaaaaaaaaaa
+      description: Öffnet ein Inventar - Aktuell einen Mülleimer
+      usage: /items
    Gm:
-      description: sss
+      description: Wechselt zwischen Creative und Survival Modus
+      usage: /gm
    rules:
-      description: sss
+      description: Zeigt die Regeln
+      usage: /rules [Seite]
