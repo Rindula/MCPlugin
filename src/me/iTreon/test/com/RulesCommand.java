@@ -22,7 +22,6 @@ public class RulesCommand implements CommandExecutor {
 		if(sender instanceof Player) {
 			Player p = (Player) sender;
 			if (args.length == 0) {
-				
 				m.sendMessage(p, "sssssssss");
 				m.sendMessage(p, "sssssssss");
 				m.sendMessage(p, "sssssssss");

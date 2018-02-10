@@ -1,16 +1,26 @@
 package me.iTreon.test.com;
 
+import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class GameCommand implements CommandExecutor {
+	
+	private JavaPlugin plugin;
+	private Messager m;
+	
+	public GameCommand(JavaPlugin p, Messager m) {
+		this.plugin = p;
+		this.m = m;
+	}
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-		
 		
 		if(sender instanceof Player) {
 			Player p =(Player) sender;
@@ -19,7 +29,7 @@ public class GameCommand implements CommandExecutor {
 			if(p.hasPermission("test.gmc")) {
 			if(p.getGameMode() == GameMode.CREATIVE) {
 				p.setGameMode(GameMode.SURVIVAL);
-				p.sendMessage("§aDu bist in SURVIVAL Modus");
+				m.sendMessage(p, "§aDu bist in SURVIVAL Modus");
 				return true;
 		} 
 		
@@ -27,12 +37,12 @@ public class GameCommand implements CommandExecutor {
 		if(p.hasPermission("test.gmc")) {
 		if(p.getGameMode() == GameMode.SURVIVAL);
 			p.setGameMode(GameMode.CREATIVE);
-			p.sendMessage("§aDu bist in Creative Modus");
+			m.sendMessage(p, "§aDu bist in Creative Modus");
 		return true;
 			}
 			
 			}else {
-				p.sendMessage("§4Du hast kein Rechte dafür");
+				m.sendMessage(p, "§4Du hast kein Rechte dafür");
 				return true;
 		}
 		

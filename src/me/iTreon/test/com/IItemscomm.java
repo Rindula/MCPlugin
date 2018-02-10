@@ -6,9 +6,18 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class IItemscomm implements CommandExecutor{
 
+	JavaPlugin plugin;
+	private Messager m;
+	
+	public IItemscomm(JavaPlugin p, Messager m) {
+		this.plugin = p;
+		this.m = m;
+	}
+	
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		
@@ -17,16 +26,16 @@ public class IItemscomm implements CommandExecutor{
 			if (p.hasPermission("test.items")) {
 				if(args.length == 0) {
 					
-					Inventory inv = Bukkit.createInventory(null, 9 * 3,"§lssss" );
+					Inventory inv = Bukkit.createInventory(p, 9 * 4,"Rucksack" );
 					p.openInventory(inv);
-					p.sendMessage("§bDu hast das Inventory geöffnet");
+					m.sendMessage(p, "Du hast das Inventory geöffnet");
 					
 					
 				} else 
-					p.sendMessage("§cDieser Command Funktoniert nicht!");
+					m.sendMessage(p, "Dieser Command Funktoniert nicht!");
 		
 		}else 
-			p.sendMessage("§cDazu hast du keine rechte");
+			m.sendMessage(p, "Dazu hast du keine rechte");
 		}
 		
 		return false;
