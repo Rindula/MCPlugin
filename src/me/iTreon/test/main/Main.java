@@ -6,7 +6,7 @@ import me.iTreon.test.Event.Event;
 import me.iTreon.test.com.GameCommand;
 import me.iTreon.test.com.HealCommand;
 import me.iTreon.test.com.IItemscomm;
-import me.iTreon.test.com.RulesCommand2;
+import me.iTreon.test.com.RulesCommand;
 import me.iTreon.test.jump.JumpandRun;
 
 public class Main extends JavaPlugin {
@@ -16,7 +16,7 @@ public class Main extends JavaPlugin {
 		getCommand("heal").setExecutor(new HealCommand());
 		getCommand("items").setExecutor(new IItemscomm());
 		getCommand("gm").setExecutor(new GameCommand());
-		getCommand("rules").setExecutor(new RulesCommand2());
+		getCommand("rules").setExecutor(new RulesCommand());
 		new JumpandRun(this);
 		new Event(this);
 	}
