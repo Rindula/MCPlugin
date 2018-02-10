@@ -1,4 +1,4 @@
-package me.iTreon.test.main;
+package me.iTreon.test.com;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
