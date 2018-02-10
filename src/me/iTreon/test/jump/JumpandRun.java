@@ -24,7 +24,7 @@ public class JumpandRun implements Listener {
 			Block b = p.getLocation().getBlock();
 			if( b.getLocation().add(new Vector(0, -1, 0).toLocation(p.getWorld())).getBlock().getType() == Material.REDSTONE_BLOCK) {
 			
-				Vector v = new Vector(0, 2, 0);
+				Vector v = new Vector(0, 1, 0);
 				p.setVelocity(v);
 				
 				p.playSound(p.getLocation(), Sound.ENTITY_FIREWORK_LAUNCH, 100F, 100F);

@@ -18,6 +18,4 @@ public class Main extends JavaPlugin {
 		new JumpandRun(this);
 		new Event(this);
 	}
-
-	
 }
