@@ -14,7 +14,7 @@ public class RulesCommand implements CommandExecutor {
 			Player p = (Player) sender;
 			if (args.length == 0) {
 				
-				p.sendMessage("§4sssssssss");
+				p.sendMessage("§4s");
 				p.sendMessage("§4sssssssss");
 				p.sendMessage("§4sssssssss");
 				p.sendMessage("§4sssssssss");
