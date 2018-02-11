@@ -7,6 +7,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.iTreon.test.main.Messager;
+
 public class HealCommand implements CommandExecutor {
 
 	JavaPlugin plugin;

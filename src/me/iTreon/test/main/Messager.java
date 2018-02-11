@@ -1,8 +1,7 @@
-package me.iTreon.test.com;
+package me.iTreon.test.main;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
-import me.iTreon.test.main.Main;
 
 public class Messager {
 

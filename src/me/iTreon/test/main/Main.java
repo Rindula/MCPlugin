@@ -8,7 +8,6 @@ import me.iTreon.test.Event.Event;
 import me.iTreon.test.com.GameCommand;
 import me.iTreon.test.com.HealCommand;
 import me.iTreon.test.com.IItemscomm;
-import me.iTreon.test.com.Messager;
 import me.iTreon.test.com.RulesCommand;
 import me.iTreon.test.jump.JumpandRun;
 
