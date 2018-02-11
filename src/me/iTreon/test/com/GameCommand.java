@@ -1,6 +1,5 @@
 package me.iTreon.test.com;
 
-import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -12,11 +11,9 @@ import me.iTreon.test.main.Messager;
 
 public class GameCommand implements CommandExecutor {
 	
-	private JavaPlugin plugin;
 	private Messager m;
 	
 	public GameCommand(JavaPlugin p, Messager m) {
-		this.plugin = p;
 		this.m = m;
 	}
 

@@ -25,4 +25,9 @@ public class Messager {
 		return plugin.getConfig().getString("general.prefix") + ChatColor.RESET;
 	}
 
+	public void sendDebug(CommandSender c, String message) {
+		String prefix = plugin.getConfig().getString("general.prefix") + ChatColor.RESET;
+		c.sendMessage(prefix + " " + ChatColor.AQUA + "[DEBUG] " + ChatColor.GOLD + message);
+	}
+
 }

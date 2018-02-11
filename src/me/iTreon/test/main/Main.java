@@ -4,7 +4,8 @@ import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.iTreon.test.Event.Event;
+import me.iTreon.test.Events.Event;
+import me.iTreon.test.Events.TeleportHandler;
 import me.iTreon.test.com.GameCommand;
 import me.iTreon.test.com.HealCommand;
 import me.iTreon.test.com.IItemscomm;
@@ -21,13 +22,18 @@ public class Main extends JavaPlugin {
 		
 		loadConfig();
 		createRules();
-		System.out.println("§aloaded");
+		// Commands
 		getCommand("heal").setExecutor(new HealCommand(this, m));
 		getCommand("items").setExecutor(new IItemscomm(this, m));
 		getCommand("gm").setExecutor(new GameCommand(this, m));
 		getCommand("rules").setExecutor(new RulesCommand(this, m));
+		
+		// Events
 		new JumpandRun(this);
 		new Event(this);
+		new TeleportHandler(this, m);
+		
+		System.out.println(ChatColor.stripColor(m.getPrefix() + " Geladen"));
 	}
 	
 	private void loadConfig() {

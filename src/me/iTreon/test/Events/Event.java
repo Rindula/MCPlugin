@@ -1,4 +1,4 @@
-package me.iTreon.test.Event;
+package me.iTreon.test.Events;
 
 import java.util.Random;
 
@@ -20,7 +20,7 @@ public class Event implements Listener {
 		String[] messages = new String[]{
 				e.getPlayer().getName() + " ist dem Spiel beigetreten",
 				"Wir haben zuwachs! " + e.getPlayer().getName() + " ist dazugekommen",
-				e.getPlayer().getName() + " tritte der Party bei",
+				e.getPlayer().getName() + " tritt der Party bei",
 				e.getPlayer().getName() + " erscheint",
 				"Rosen sind Rot, Feilchen sind Blau, und " + e.getPlayer().getName() + " bleibt auch diesem Server treu"
 		};
