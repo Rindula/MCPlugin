@@ -15,3 +15,6 @@ commands:
    rules:
       description: Zeigt die Regeln
       usage: /rules [Seite]
+   tp:
+      description: Teleportieren - Mal anders...
+      usage: /tp [Spieler]|/tp [Spieler1] [Spieler2]|/tp [Koordinaten]

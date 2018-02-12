@@ -2,12 +2,13 @@ package me.iTreon.test.main;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class Messager {
 
-	private Main plugin;
+	private JavaPlugin plugin;
 
-	public Messager(Main p) {
+	public Messager(JavaPlugin p) {
 		this.plugin = p;
 	}
 	
