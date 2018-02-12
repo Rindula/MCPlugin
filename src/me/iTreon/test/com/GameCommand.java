@@ -24,14 +24,14 @@ public class GameCommand implements CommandExecutor {
 			Player p = (Player) sender;
 			if (args.length == 0) {
 				if (command.getName().equalsIgnoreCase("gm")) {
-					if (p.hasPermission("test.gmc")) {
+					if (p.hasPermission("test.gm")) {
 						if (p.getGameMode() == GameMode.CREATIVE) {
 							p.setGameMode(GameMode.SURVIVAL);
 							m.sendMessage(p, "Du bist in SURVIVAL Modus");
 							return true;
 						}
 
-						if (p.hasPermission("test.gmc")) {
+						if (p.hasPermission("test.gm")) {
 							if (p.getGameMode() == GameMode.SURVIVAL)
 								;
 							p.setGameMode(GameMode.CREATIVE);
